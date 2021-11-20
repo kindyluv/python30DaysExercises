@@ -1,12 +1,13 @@
 number = int(input('Enter a number: '))
+times = int(input('Enter a times: '))
 
 
-def multiplication(numbers):
-    z = 0
+def multiplication(numbers, x):
+    z = 1
     while z <= numbers:
-        b = '{} x {} = {}'.format(z, z, z * z)
+        b = '{} x {} = {}'.format(z, x, x * z)
         print(b)
         z += 1
 
 
-multiplication(number)
+multiplication(number, times)
