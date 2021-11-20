@@ -12,16 +12,24 @@ while j <= numbers:
 
 
 def create_pyramid(rows):
-    for i in range(rows):
-        print((' ' * (rows - i - 1) + '*' * (2 * i + 1)))
+    for k in range(rows):
+        print((' ' * (rows - k - 1) + '*' * (2 * k + 1)))
 
 
 print((create_pyramid(numbers)))
 
 
 def create_upside_down_pyramid(rows):
-    for i in reversed(list(range(rows))):
-        print((' ' * (rows - i - 1) + '*' * (2 * i + 1)))
+    for l in reversed(list(range(rows))):
+        print((' ' * (rows - l - 1) + '*' * (2 * l + 1)))
 
 
 print((create_upside_down_pyramid(numbers)))
+
+
+for t in range(numbers):
+    for y in range(numbers):
+        print('*', end=' ')
+    print()
+
+
