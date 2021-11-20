@@ -137,3 +137,28 @@ print(challenge.strip('thirty'))  # 'irty days of py'
 web_tech = ['HTML', 'CSS', 'JavaScript', 'React']
 result = ' '.join(web_tech)
 print(result)  # 'HTML CSS JavaScript React'
+
+# split
+challenge = 'thirty days of python'
+print(challenge.split()) # ['thirty', 'days', 'of', 'python']
+challenge = 'thirty, days, of, python'
+print(challenge.split(', ')) # ['thirty', 'days', 'of', 'python']
+
+lst = ['item', 'item2', 'item3', 'item4', 'item5']
+first_item, *rest = lst
+print(lst)
+print(lst[::2])  # removes all second items from the list
+print('item3' in lst)
+del lst[2]
+print(lst)
+
+lis1 = [3, 4, 1, 4, 5]
+
+sets = str(set(lis1))
+print(sets)
+
+# syntax
+st = {'item1', 'item2', 'item3', 'item4'}
+st.update(['item5', 'item6', 'item7'])
+print(st)
+
